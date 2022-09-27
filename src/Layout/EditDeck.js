@@ -56,8 +56,8 @@ const EditDeck = () => {
         </nav>
         <h2>Edit Deck</h2>
         <form onSubmit={handleSubmit}>
-          <label>Name:</label>
-          <div>
+          <label><b>Name:</b></label>
+          <div className="mb-2">
             <input
               name="name"
               type="text"
@@ -68,12 +68,13 @@ const EditDeck = () => {
             />
           </div>
   
-          <label>Description:</label>
+          <label><b>Description:</b></label>
           <div>
             <textarea
               name="description"
               type="textarea"
               id="description"
+              rows="5"
               value={description}
               onChange={handleChange}
               required
@@ -82,7 +83,7 @@ const EditDeck = () => {
           <button className="btn btn-secondary mr-1" onClick={() => history.push("/")} type="button">
             cancel
           </button>
-          <button className="btn btn-primary mr-1" type="submit">submit</button>
+          <button className="btn btn-info mr-1" type="submit">submit</button>
         </form>
       </div>
     );

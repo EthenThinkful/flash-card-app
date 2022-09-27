@@ -23,7 +23,7 @@ function StudyCardFlip({ card = {}, title,  littleChild, nextHandler }) {
                     ?   <button
                             type="button"
                             onClick={nextHandler}
-                            className="btn btn-primary"
+                            className="btn btn-info"
                         >
                             Next
                         </button>

@@ -51,14 +51,14 @@ console.log(decks)
         <div className="card-body">
           <h5 className="card-title">{deck.name}</h5>
           <h6 className="card-subtitle mb-2 text-muted">{deck.description}</h6>
-          <p className="card-text text-info">{deck.cards && deck.cards.length} cards</p>
-          <button onClick={() => history.push(`/decks/${deck.id}`)} className="card-link">
+          <p className="card-text text-primary">{deck.cards && deck.cards.length} cards</p>
+          <button onClick={() => history.push(`/decks/${deck.id}`)} className="card-link btn btn-info">
             View
           </button>
-          <button onClick={() => history.push(`/decks/${deck.id}/study`)} className="card-link">
+          <button onClick={() => history.push(`/decks/${deck.id}/study`)} className="card-link btn btn-secondary">
             Study
           </button>
-          <button onClick={() => handleDelete(deck.id)} className="btn btn-danger float-right">
+          <button onClick={() => handleDelete(deck.id)} className="btn btn-light float-right">
             🗑️
           </button>
         </div>

@@ -10,6 +10,7 @@ const Form = ({handleChange,handleSubmit,formData, deckId}) =>{
             placeholder="front side of the card"
             type= "textarea"
             id ="front"
+            rows="5"
             value={formData.front}
             onChange= {handleChange}
             required
@@ -24,13 +25,14 @@ const Form = ({handleChange,handleSubmit,formData, deckId}) =>{
             placeholder="front side of the card"
             type="textarea"
             id="back"
+            rows="5"
             value={formData.back}
             onChange={handleChange}
             required
             />
             </div>
             <button className="btn btn-secondary mr-1" onClick={() => history.push(`/decks/${deckId}`) } type = "button">Done</button>
-            <button className="btn btn-primary mr-1"  type="submit">save</button>
+            <button className="btn btn-info mr-1"  type="submit">save</button>
 
         </form>
     )

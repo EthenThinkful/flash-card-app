@@ -66,7 +66,7 @@ const MakeDeck = () => {
           Please enter a description of your deck.
         </small>
       </div>
-      <button type="submit" className="btn btn-primary">
+      <button type="submit" className="btn btn-info">
         Submit
       </button>
       <button className="btn btn-secondary ml-2" onClick={() => history.push("/")}>cancel</button>
