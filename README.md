@@ -1,48 +1,25 @@
-## Project description: Flashcard-o-matic
-A local school has decided to put together a flash card application, Flashcard-o-matic, to help their students study online. Teachers will use this application to create decks of flash cards for the subjects that they teach, and students will study the decks. The school needs you to build the application that the students and teachers will use.
+# Project description: Flashcard-o-matic
+A flashcard application for helping students study online. This app was designed to help students study online with a variety of helpful yet simple and easy to use features. 
 
-A flashcard application for helping students study online.
-Bootstrap 4 is included with the starter HTML. You're welcome to use vanilla CSS or Bootstrap 4 for styling your project. However, your finished product doesn't have to match the styles in the provided screenshots because you won't be assessed on the styling or responsiveness of your project.
+## Features
+From the home screen view there are 4 available options. Create a new study deck, view an existing deck, STUDY an existing deck, or delete any existing deck. 
 
-For detailed instructions on how to complete this project, consult the Instructions document in the Qualified assessment interface.
+![HomeScreen](https://user-images.githubusercontent.com/104235709/193194546-f03dda10-f231-4e4d-be4d-d53a8c54d575.PNG)
 
-### Learning objectives
-This project is designed to test your ability to work with rendering and state management using React. Before taking on this project, you should be comfortable with the learning objectives listed below:
+### Deck View 
 
-- Installing packages via NPM
+![DeckView](https://user-images.githubusercontent.com/104235709/193193885-60d4673a-6029-4c7d-801f-f93c6aa0fc7e.PNG)
 
-- Running tests from the command line
+From here, a user can edit their deck to their preferences, study, add new cards, as well as edit individual card information (frontside and backside).
 
-- Writing React function components
+If a user chooses to study their deck, they will be redirected to a separate page allowing them to easily flip the front and back of their cards.
 
-- Creating routes, including nested routes, using React Router
+![beforeTheFlipFA](https://user-images.githubusercontent.com/104235709/193195690-ab81ea9d-7012-4c47-856c-30717b851ff0.PNG)
 
-- Using hooks like useState(), useParams(), and useHistory()
+Only when the card is flipped to the backside does the user have the ability to go to the next card.
 
-- Debugging React code through console output and using the VS Code debugger
+![afterTheFlipFA](https://user-images.githubusercontent.com/104235709/193195701-32956085-1155-4a0d-8687-468bcec37ed3.PNG)
 
-### Steps to complete
-To complete this project, you must do the following:
+## Installation
 
-Write code that passes all the tests in the Qualified assessment in this lesson.
-
-Write code that passes all of the requirements outlined below, and submit your GitHub repo link to the Thinkful team in the next lesson.
-
-Remember to sync this Qualified project with your local machine so that you can commit it to GitHub in the next lesson.
-
-Requirements to pass
-For your project to pass, all of the following statements must be true. These criteria are reflected in the rubric in the following lesson.
-
-All tests are passing in Qualified.
-
-All the props are treated as read-only.
-
-State is never directly mutated; it's only updated via setState().
-
-The Edit Card and Create Card screens share the same form component.
-
-The useEffect() hooks have the appropriate dependencies listed in the dependency array.
-
-State is "lifted up" to the parent component where appropriate.
-
-All inputs are controlled. Generally, there is a warning on the console when you type into the input box and it changes from uncontrolled to controlled. The warning looks like this: "Warning: Input is changing an uncontrolled input of type <text|number|etc.> to be controlled." This is often the result of initializing the state to null or undefined.
+To run this project locally on your machine, fork and clone this repository and run `npm install` to install the required dependencies. Once the project is finished installing its packages, you can run `npm run start` to start the server. 
