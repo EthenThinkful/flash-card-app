@@ -24,15 +24,6 @@ export default function Display() {
     });
   }, []);
 
-  // for (let i = 0; i < card.length; i++) {
-  //     return card.name;
-  // }
-
-  // console.log(card);
-
-  // setCard({...card, listDecks})
-  // console.log(card)
-
   const handleDelete = (deckId) =>{
     if(window.confirm("delete this deck? You won't be able to recover it" )){
         deleteDeck(deckId);
@@ -51,7 +42,7 @@ console.log(decks)
         <div className="card-body">
           <h5 className="card-title">{deck.name}</h5>
           <h6 className="card-subtitle mb-2 text-muted">{deck.description}</h6>
-          <p className="card-text text-primary">{deck.cards && deck.cards.length} cards</p>
+          <p className="card-text text-secondary">{deck.cards && deck.cards.length} cards</p>
           <button onClick={() => history.push(`/decks/${deck.id}`)} className="card-link btn btn-info">
             View
           </button>
