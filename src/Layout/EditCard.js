@@ -25,7 +25,6 @@ const EditCard = () => {
     const value = target.value;
     setcurrentCard({ ...currentCard, [target.name]: value });
   };
-  // const { front, back } = currentCard;
 
   const handleSubmit = async (event) => {
     event.preventDefault();

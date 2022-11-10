@@ -18,13 +18,7 @@ const EditDeck = () => {
       loadDeck();
     }, [deckId]);
   
-    //   const formData = {
-    //     name: currentDeck.name ,
-    //     description: currentDeck.description,
-    //   };
-  
     const { name, description } = deckToedit;
-    //   console.log(formData);
   
     const handleChange = (event) => {
       const { target } = event;

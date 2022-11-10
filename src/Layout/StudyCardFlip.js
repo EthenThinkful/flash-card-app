@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 const viewNext = { front: "back", back: "front"};
-function StudyCardFlip({ card = {}, title,  littleChild, nextHandler }) {
+function StudyCardFlip({ card = {}, title, nextHandler }) {
     const [view, setView] = useState('front');
     const [flipped, setFlipped] = useState(false);
 

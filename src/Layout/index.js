@@ -18,16 +18,6 @@ import {
 
 
 function Layout() {
-
-  //   useEffect(
-  //     () => {
-  //   async function fetchDecks() {
-  //     const decks = await listDecks();
-  //   }
-  //   fetchDecks();
-  //   },
-  //   []
-  // )
   return (
     
     <>
@@ -38,7 +28,7 @@ function Layout() {
           <Route exact path="/">
             <Display />
           </Route>
-          {/* useParams makes ":deckId" possible */}
+          {/* useParams ":deckId" */}
           <Route exact path="/decks/:deckId/study"> 
             <Study />
           </Route>

@@ -13,13 +13,6 @@ const MakeDeck = () => {
   const [formData, setFormData] = useState(inititalFormState)
   const {name, description} = formData
 
-  // const handleChange = ({target}) => {
-
-  // setFormData({
-  //   ...formData,
-  //   [target.name]: target.value
-  //   })
-  // }
   const handleChange = (event) => {
     const { target } = event;
     const value = target.value;
