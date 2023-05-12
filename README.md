@@ -10,9 +10,7 @@ From the home screen view there are 4 available options. Create a new study deck
 
 ![DeckView](https://user-images.githubusercontent.com/104235709/193193885-60d4673a-6029-4c7d-801f-f93c6aa0fc7e.PNG)
 
-From here, a user can edit their deck to their preferences, study, add new cards, as well as edit individual card information (frontside and backside).
-
-If a user chooses to study their deck, they will be redirected to a separate page allowing them to easily flip the front and back of their cards.
+### Study View 
 
 ![beforeTheFlipFA](https://user-images.githubusercontent.com/104235709/193195690-ab81ea9d-7012-4c47-856c-30717b851ff0.PNG)
 
